@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  erp-backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    container_name: erp-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/ERP-main:/app
+    restart: always
