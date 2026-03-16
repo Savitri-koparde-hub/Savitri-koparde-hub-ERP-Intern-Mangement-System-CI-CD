@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📊 ERP - Intern Management System
 
 <div align="center">
@@ -1536,3 +1537,6 @@ Future enhancements:
 Made with ❤️ by [Prajwal](https://github.com/prajwal032004)
 
 </div>
+=======
+# ERP-Intern-Mangement-System-CI-CD
+>>>>>>> 74cabbfd39d7888afb2cee5ecfd08e6ac882af43
