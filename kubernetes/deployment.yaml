@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: erp-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: erp-backend
+  template:
+    metadata:
+      labels:
+        app: erp-backend
+    spec:
+      containers:
+        - name: erp-backend
+          image: react-native-erp-app-main-erp-backend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000
