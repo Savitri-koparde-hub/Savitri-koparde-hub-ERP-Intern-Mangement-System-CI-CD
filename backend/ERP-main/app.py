@@ -969,7 +969,7 @@ def admin_attendance():
     monthly_summary = cur.fetchall()
     
     cur.execute("""
-        SELECT u.intern_id, u.full_name, u.role, u.department, u.photo_url
+        SELECT u.id, u.intern_id, u.full_name, u.role, u.department, u.photo_url
         FROM users u
         WHERE u.is_admin = 0 AND u.status = 'APPROVED'
         AND u.id NOT IN (
