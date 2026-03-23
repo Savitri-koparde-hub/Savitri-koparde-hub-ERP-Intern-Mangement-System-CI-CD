@@ -242,7 +242,7 @@ endblock %} {% block content %}
       <div class="absent-grid">
         {% for user in absent_today %}
         <div class="absent-item" data-name="{{ user.full_name }}">
-           <a href="#">
+           <a href="{{ url_for('admin_intern_detail', intern_id=user['intern_id'] if 'intern_id' in user else 0) }}">
             <img
               src="{{ url_for('static', filename='uploads/profiles/' + user.photo_url) if user.photo_url else 'https://ui-avatars.com/api/?name=' + user.full_name }}"
               alt="{{ user.full_name }}"
